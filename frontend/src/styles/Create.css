@@ -1,0 +1,72 @@
+.create-area {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+
+.title-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.title-area input {
+    padding: 7px 14px;
+    border: 1px solid rgb(31, 30, 30);
+    border-radius: 100px;
+    background-color: #171717;
+    outline: none;
+}
+
+.title-area button{
+    background-color: #db59d5;
+    outline: none;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+textarea{
+    border: 1px solid rgb(90, 82, 82);
+    background-color: #171717;
+    box-shadow: 1px 1px 10px 1px rgb(90, 82, 82);
+    outline: none;
+    width: 900px;
+    height: 550px;
+    resize: none;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.save-data{
+    background-color: #db59d5;
+    padding: 7px 14px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.create-type-area{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    background-color: #1a151d;
+    padding: 7px 14px;
+    border-radius: 7px;
+    border: 1px solid #6a4f67;
+}
+
+.type-active{
+    background-color: white;
+    color: black;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+
+.msg-create{
+    margin-bottom: -30px;
+}

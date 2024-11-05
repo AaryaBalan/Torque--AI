@@ -1,0 +1,95 @@
+.table {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 16px;
+    width: 100%;
+    margin: 50px;
+    margin-bottom: 20px;
+}
+
+table th {
+    border: 1px solid white;
+    padding: 6px;
+    background-color: #384450;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+table tr:hover {
+    background-color: hsl(307, 15%, 16%);
+}
+
+tr:nth-child(odd) {
+    background-color: hsl(0, 0%, 15%);
+    /* Light gray for odd rows */
+}
+
+tr:nth-child(even) {
+    background-color: #060606;
+    /* White for even rows */
+}
+
+.download-btn{
+    border: none;
+    cursor: pointer;
+}
+
+.getinfo{
+    padding: 7px 14px;
+    background-color: #384450;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+    align-self: start;
+}
+
+.info-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 50px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* width: 220px; */
+}
+
+.info-head{
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.info-vals{
+    color: #c54aca;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.single-title{
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #c54aca;
+}
+
+.view-more{
+    margin-left: 50px;
+    color: #c54aca;
+}

@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-bottom: 2px solid #171717;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 50px;
+}
+
+.nav-links, .brand{
+    color: #db59d5;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-fragment{
+    position: sticky;
+    top: 0;
+    background-color: #060606;
+    z-index: 200;
+}
+
+.active-nav{
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,45 @@
+.single-dataset-fragment{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-dataset{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #6a4f67;
+    background-color: #1a151d;
+    cursor: pointer;
+}
+
+.img-area img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.content-area .title{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #db59d5;
+}

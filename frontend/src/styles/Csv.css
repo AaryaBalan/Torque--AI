@@ -1,0 +1,45 @@
+.csv-area {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#uploadCsv {
+    display: none;
+}
+
+.upload-csv-label {
+    cursor: pointer;
+    background-color: #c54aca;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 100px;
+}
+
+.addFile {
+    padding: 7px 14px;
+    background-color: #6a4f67;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.file-title {
+    background-color: #171717;
+    border: 1px solid #171717;
+    padding: 7px 14px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.csv-fragment {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}

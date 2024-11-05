@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  font-family: "Poppins", serif;
+}
+
+
+body {
+  background-color: #060606;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060606;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c54aca;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(298, 55%, 44%);
+}
