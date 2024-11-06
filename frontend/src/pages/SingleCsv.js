@@ -14,7 +14,7 @@ const SingleCsv = () => {
     useEffect(() => {
         async function getCsvData() {
             const id = window.location.pathname.split('/')[2]
-            const response = await fetch(`http://localhost:7000/file/${id}`)
+            const response = await fetch(`https://torque-ai-server.vercel.app/file/${id}`)
             const responseJSON = await response.json()
             setCsvData(responseJSON)
         }
@@ -59,7 +59,7 @@ const SingleCsv = () => {
 
     const downloadFile = (fileName) => {
         // The URL to your backend download endpoint
-        const url = `http://localhost:7000/download/${fileName}`;
+        const url = `https://torque-ai-server.vercel.app/download/${fileName}`;
         // Create an anchor element to trigger download
         const link = document.createElement('a');
         link.href = url;

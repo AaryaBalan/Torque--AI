@@ -26,7 +26,7 @@ const Dataset = (props) => {
     // fetching data using useEffect
     useEffect(() => {
         async function getData() {
-            const response = await fetch("http://localhost:7000/allData")
+            const response = await fetch("https://torque-ai-server.vercel.app/allData")
             const responseJSON = await response.json()
             console.log(responseJSON)
             setTextData(responseJSON)
@@ -34,7 +34,7 @@ const Dataset = (props) => {
         }
 
         async function getCsvData() {
-            const response = await fetch("http://localhost:7000/csvdata")
+            const response = await fetch("https://torque-ai-server.vercel.app/csvdata")
             const responseJSON = await response.json()
             console.log(responseJSON)
             setCsvData(responseJSON)

@@ -13,7 +13,7 @@ const Create = () => {
     // generating AI content from backend and fetching it
     useEffect(() => {
         try {
-            fetch('http://localhost:7000/generate')
+            fetch('https://torque-ai-server.vercel.app/generate')
                 .then(res => res.json())
                 .then(data => setAIcontent(data))
         } catch (err) {
@@ -23,7 +23,7 @@ const Create = () => {
 
     // generating the corresponding AI content based on the prompt
     async function generatePrompt() {
-        fetch("http://localhost:7000/push", {
+        fetch("https://torque-ai-server.vercel.app/push", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const Create = () => {
     // adding data to the server
     async function addData() {
         if (prompt.length !== 0 && AIcontent.length !== 0) {
-            fetch("http://localhost:7000/addData", {
+            fetch("https://torque-ai-server.vercel.app/addData", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

@@ -28,7 +28,7 @@ const Csv = () => {
                     <a href="/data/create" className="create-type">Upload Text</a>
                     <a href="/data/csv" className="create-type type-active">Upload CSV file</a>
                 </div>
-                <form action="http://localhost:7000/addFile" method="POST" enctype="multipart/form-data" className="csv-area">
+                <form action="https://torque-ai-server.vercel.app/addFile" method="POST" enctype="multipart/form-data" className="csv-area">
                     <label className='upload-csv-label' htmlFor="uploadCsv">Upload a CSV</label>
                     <input type="file" name="uploadCsv" id="uploadCsv" onChange={fileUploaded} required accept='.csv' />
                     <div className="file-name">

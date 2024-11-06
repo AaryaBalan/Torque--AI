@@ -15,7 +15,7 @@ const TextData = (props) => {
         console.log(window.location.pathname.split('/')[1])
         const id = window.location.pathname.split('/')[2]
         async function getTextData() {
-            const response = await fetch(`http://localhost:7000/allData/${id}`)
+            const response = await fetch(`https://torque-ai-server.vercel.app/allData/${id}`)
             const responseJSON = await response.json()
             setSingleData(responseJSON[0])
         }
