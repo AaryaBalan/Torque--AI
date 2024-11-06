@@ -23,7 +23,7 @@ app.use(express.json())
 
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://torque-ai-git-main-aaryabalans-projects.vercel.app']
+    origin: 'https://torque-ai.vercel.app'
 }));
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
