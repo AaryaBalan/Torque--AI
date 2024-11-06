@@ -119,13 +119,13 @@ const Dataset = (props) => {
                     </div>
                 </div>
 
-                {
+                {/* {
                     [0, 2].includes(filter) &&
                     <div className="csv-data-trending">
                         <div className="dataset-content">
                             <div className="dataset-content-head"><i class="fa-solid fa-chart-simple" style={{ color: "#ffffff" }}></i> Trending Datasets</div>
                         </div>
-                        {/* displaying all dataset by map method */}
+                        displaying all dataset by map method
                         <div className="display-dataset">
                             {mvpData.map(data => {
                                 return <SingleDataset key={data.id} url={data.url} id={data.id} img={data.img} title={data.title} description={data.description} downloadSrc={data.downloadSrc} click={setIsOpen} setInfo={setSingleInfo} />
@@ -136,7 +136,7 @@ const Dataset = (props) => {
                         </div>
                         <hr />
                     </div>
-                }
+                } */}
 
                 {
                     [0, 1].includes(filter) &&
@@ -183,7 +183,7 @@ const Dataset = (props) => {
                                                 <div className="csv-img">
                                                     <img src={csvImg} alt="" />
                                                 </div>
-                                                <a href={"csvData/" + data.id} className="csv-title">{data.title || 'Title'}</a>
+                                                <a href={"csvData/" + data.id} className="csv-title">{data.title && data.title.toUpperCase()}</a>
                                                 <div className="filename stats"><span>File name:</span> {data.filename}</div>
                                                 <div className="file-type stats"><span>File type:</span> {data.filetype || "Zip"}</div>
                                                 <div className="file-size stats"><span>Size:</span> {formatBytes(data.size)}</div>

@@ -44,12 +44,12 @@ tr:nth-child(even) {
     /* White for even rows */
 }
 
-.download-btn{
+.download-btn {
     border: none;
     cursor: pointer;
 }
 
-.getinfo{
+.getinfo {
     padding: 7px 14px;
     background-color: #384450;
     border: none;
@@ -59,37 +59,37 @@ tr:nth-child(even) {
     align-self: start;
 }
 
-.info-area{
+.info-area {
     display: flex;
     justify-content: space-between;
     align-items: start;
     margin: 50px;
 }
 
-.infos{
+.infos {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     /* width: 220px; */
 }
 
-.info-head{
+.info-head {
     display: none;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.info-vals{
+.info-vals {
     color: #c54aca;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.single-title{
+.single-title {
     font-size: 22px;
     font-weight: 600;
     border-bottom: 1px solid #c54aca;
 }
 
-.view-more{
+.view-more {
     margin-left: 50px;
     color: #c54aca;
 }

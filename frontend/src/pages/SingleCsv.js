@@ -109,7 +109,7 @@ const SingleCsv = () => {
                     <div className="date info-head">Uploaded on: <span className="info-vals">{csvData.date}</span></div>
                 </div>
                 <div className="single-title">{csvData.title}</div>
-                <button className='download-btn' onClick={() => downloadFile(csvData.filename)}>Download</button>
+                <button class="text-download csv-download" title={"Download " + csvData.filename} onClick={() => downloadFile(csvData.filename)}><i class="fa-solid fa-download" aria-hidden="true"></i></button>
             </div>
             <div className="table">
                 <table>

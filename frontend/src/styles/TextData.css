@@ -52,7 +52,7 @@
     outline: none;
     border: none;
     border-radius: 50%;
-    align-self: end;
+    /* align-self: end; */
     cursor: pointer;
     width: 60px;
     height: 60px;

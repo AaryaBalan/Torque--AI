@@ -88,14 +88,14 @@ const Home = () => {
                 </div>
 
                 {/* trending datasets */}
-                <div className="trending-datasets">
+                {/* <div className="trending-datasets">
                     <h1 className="trending-dataset-head">Trending DataSets</h1>
                     <div className="display-dataset-home">
                         {datasetMVP.map(data => {
                             return <SingleDataset key={data.id} id={data.id} img={data.img} title={data.title} description={data.description} downloadSrc={data.downloadSrc} click={setIsOpen} setInfo={setSingleInfo} />
                         })}
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
