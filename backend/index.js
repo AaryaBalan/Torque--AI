@@ -22,15 +22,8 @@ const upload = multer({ storage: storage })
 app.use(express.json())
 
 
-const allowedOrigins = ['http://localhost:3000', 'http://192.168.31.95:3000', 'https://example.com'];
 app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true); // Allow the request if origin is in the list
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    }
+    origin: ['http://localhost:3000', 'https://torque-ai-git-main-aaryabalans-projects.vercel.app']
 }));
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
@@ -47,7 +40,7 @@ app.get('/generate', async (req, res) => {
         prompt = { prompt: "type Hello! This is Torque AI, Enter a prompt to generate" }
         res.json({ content: result.response.text() })
     } catch (err) {
-        res.json({ content: "Your prompt is violating our terms and conditions." })
+        res.json({ err: err, content: "Your prompt is violating our terms and conditions." })
     }
 })
 

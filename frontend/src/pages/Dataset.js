@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import SingleDataset from '../components/SingleDataset'
+// import SingleDataset from '../components/SingleDataset'
 import datasetMVP from '../data/datasetMVP'
 // import loan from '../data/allDataSets/accidents.csv'
 import dataImg from "../assets/images/data.jpg"
