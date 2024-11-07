@@ -45,7 +45,7 @@ const Create = () => {
                 },
                 body: JSON.stringify({ title: prompt, data: AIcontent.content })
             })
-            window.open("http://localhost:3000/data", "_self")
+            window.open("https://torque-ai.vercel.app/data", "_self")
         } else {
             setMsg("Fill the fields to add the data")
         }

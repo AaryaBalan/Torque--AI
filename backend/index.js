@@ -80,7 +80,7 @@ app.post('/addFile', upload.single('uploadCsv'), async (req, res) => {
         const postCsvData = await pool.query("INSERT INTO csvdata (filename, filetype, size, title, date) VALUES ($1, $2, $3, $4, $5)", [req.file.originalname, req.file.mimetype, req.file.size, req.body.title, formatDate()])
         // res.send(req.file)
         console.log(req.body)
-        res.redirect('http://localhost:3000/data')
+        res.redirect('https://torque-ai.vercel.app/data')
     } catch (err) {
         console.log("fill the fields")
     }
